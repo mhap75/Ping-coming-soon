@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+/* Variables */
+$PriBlue: hsl(223, 87%, 63%);
+$SecPaleBlue: hsl(223, 100%, 88%);
+$SecLightRed: hsl(354, 100%, 66%);
+$NeuGray: hsl(0, 0%, 59%);
+$NeuVeryDarkBlue: hsl(209, 33%, 12%);
+$White: hsl(0, 0%, 100%);
+
+:root {
+    font-size: 62.5%;
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    ::-webkit-scrollbar-button {
+        width: 0px;
+        height: 0px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #bdcfff;
+        border: 0px none #ffffff;
+        border-radius: 100px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #ffffff;
+    }
+    ::-webkit-scrollbar-thumb:active {
+        background: #000000;
+    }
+    ::-webkit-scrollbar-track {
+        background: #969696;
+        border: 2px none #ffffff;
+        border-radius: 100px;
+    }
+    ::-webkit-scrollbar-track:hover {
+        background: #db1414;
+    }
+    ::-webkit-scrollbar-track:active {
+        background: #000000;
+    }
+    ::-webkit-scrollbar-corner {
+        background: transparent;
+    }
+}
+
+*,
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: inherit;
+}
+
+body {
+    width: 100%;
+    min-height: 100dvh;
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin-block: 0.5em 1em;
+}
+
+/* Custom styles */
+
+body {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: $NeuVeryDarkBlue;
+}
+
+header {
+    padding-block: 3.1em 2em;
+}
+
+h1 {
+    color: $NeuGray;
+    font-weight: 300;
+    strong {
+        color: initial;
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.btn {
+    border-radius: 100rem;
+    border: none;
+    background-color: $PriBlue;
+    color: $White;
+    padding: 0.7em 2.5em;
+    font-weight: 600;
+    box-shadow: 0 3px 10px -1px #4f7df3b8;
+    &:hover,
+    &:focus {
+        opacity: 0.8;
+    }
+
+    &:active {
+        box-shadow: inset 0 0px 10px 0px rgb(66 85 134 / 53%);
+    }
+}
+
+input[type="email"] {
+    text-align: start;
+    width: 35%;
+    min-width: 320px;
+    padding: 1em 1.5em;
+    border: 1px solid $SecPaleBlue;
+    border-radius: 100rem;
+    margin-inline: 1em;
+    font-weight: 600;
+
+    &:focus {
+        outline: 1.5px solid $PriBlue;
+    }
+
+    &::placeholder {
+        color: $NeuGray;
+        font-weight: initial;
+    }
+}
+
+.future-dash {
+    img {
+        width: 90%;
+        max-width: 550px;
+        margin: 2em 0;
+    }
+}
+
+.social-holder {
+    margin-block: 0 0.5em;
+    ion-icon {
+        color: $PriBlue;
+        border: 1px solid $SecPaleBlue;
+        border-radius: 50%;
+        padding: 0.3em;
+        margin-inline: 0.4em;
+        cursor: pointer;
+        &:hover {
+            background-color: $PriBlue;
+            color: $White;
+        }
+    }
+}
+
+.get-notified {
+    position: relative;
+    display: inline-block;
+    label[for="email-notify"] {
+        color: $SecLightRed;
+        font-style: italic;
+        font-size: 1.2rem;
+        position: absolute;
+        left: 1.5em;
+        top: 4em;
+    }
+}
+
+footer {
+    padding-bottom: 1em;
+}
+
+@media screen and (max-width: 900px) {
+    .get-notified {
+        display: block;
+        label[for="email-notify"] {
+            width: 100%;
+            left: 0;
+        }
+    }
+    input[type="email"] {
+        margin: 0 auto;
+        margin-bottom: 1.5em;
+        width: 55%;
+    }
+    .btn {
+        width: 320px;
+    }
+}

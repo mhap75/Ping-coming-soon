@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+/* Variables */
+:root {
+  font-size: 62.5%;
+}
+:root ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+:root ::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+:root ::-webkit-scrollbar-thumb {
+  background: #bdcfff;
+  border: 0px none #ffffff;
+  border-radius: 100px;
+}
+:root ::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+:root ::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+:root ::-webkit-scrollbar-track {
+  background: #969696;
+  border: 2px none #ffffff;
+  border-radius: 100px;
+}
+:root ::-webkit-scrollbar-track:hover {
+  background: #db1414;
+}
+:root ::-webkit-scrollbar-track:active {
+  background: #000000;
+}
+:root ::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+*,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: inherit;
+}
+
+body {
+  width: 100%;
+  min-height: 100dvh;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin-block: 0.5em 1em;
+}
+
+/* Custom styles */
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: hsl(209deg, 33%, 12%);
+}
+
+header {
+  padding-block: 3.1em 2em;
+}
+
+h1 {
+  color: hsl(0deg, 0%, 59%);
+  font-weight: 300;
+}
+h1 strong {
+  color: initial;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.btn {
+  border-radius: 100rem;
+  border: none;
+  background-color: hsl(223deg, 87%, 63%);
+  color: hsl(0deg, 0%, 100%);
+  padding: 0.7em 2.5em;
+  font-weight: 600;
+  box-shadow: 0 3px 10px -1px rgba(79, 125, 243, 0.7215686275);
+}
+.btn:hover, .btn:focus {
+  opacity: 0.8;
+}
+.btn:active {
+  box-shadow: inset 0 0px 10px 0px rgba(66, 85, 134, 0.53);
+}
+
+input[type=email] {
+  text-align: start;
+  width: 35%;
+  min-width: 320px;
+  padding: 1em 1.5em;
+  border: 1px solid hsl(223deg, 100%, 88%);
+  border-radius: 100rem;
+  margin-inline: 1em;
+  font-weight: 600;
+}
+input[type=email]:focus {
+  outline: 1.5px solid hsl(223deg, 87%, 63%);
+}
+input[type=email]::-moz-placeholder {
+  color: hsl(0deg, 0%, 59%);
+  font-weight: initial;
+}
+input[type=email]:-ms-input-placeholder {
+  color: hsl(0deg, 0%, 59%);
+  font-weight: initial;
+}
+input[type=email]::placeholder {
+  color: hsl(0deg, 0%, 59%);
+  font-weight: initial;
+}
+
+.future-dash img {
+  width: 90%;
+  max-width: 550px;
+  margin: 2em 0;
+}
+
+.social-holder {
+  margin-block: 0 0.5em;
+}
+.social-holder ion-icon {
+  color: hsl(223deg, 87%, 63%);
+  border: 1px solid hsl(223deg, 100%, 88%);
+  border-radius: 50%;
+  padding: 0.3em;
+  margin-inline: 0.4em;
+  cursor: pointer;
+}
+.social-holder ion-icon:hover {
+  background-color: hsl(223deg, 87%, 63%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+.get-notified {
+  position: relative;
+  display: inline-block;
+}
+.get-notified label[for=email-notify] {
+  color: hsl(354deg, 100%, 66%);
+  font-style: italic;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 1.5em;
+  top: 4em;
+}
+
+footer {
+  padding-bottom: 1em;
+}
+
+@media screen and (max-width: 900px) {
+  .get-notified {
+    display: block;
+  }
+  .get-notified label[for=email-notify] {
+    width: 100%;
+    left: 0;
+  }
+  input[type=email] {
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+    width: 55%;
+  }
+  .btn {
+    width: 320px;
+  }
+}/*# sourceMappingURL=main.css.map */

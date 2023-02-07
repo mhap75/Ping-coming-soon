@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/image/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/scss/main.css">
+  <title>Frontend Mentor | Ping coming soon page</title>
+</head>
+
+<body>
+  <header>
+    <picture class="main-logo">
+      <img src="assets/image/logo.svg" alt="ping logo">
+    </picture>
+  </header>
+
+  <main class="container">
+    <h1>We are launching <strong>soon!</strong></h1>
+    <p>Subscribe and get notified</p>
+    <form>
+      <span class="get-notified">
+        <input id="email-notify" type="email" aria-label="email" autocomplete="email" name="email"
+          placeholder="Your email address..." enterkeyhint="go" required>
+        <label hidden for="email-notify">Please provide a valid email address</label>
+      </span>
+      <button type="submit" class="btn">Notify Me</button>
+    </form>
+    <picture class="future-dash">
+      <img src="assets/image/illustration-dashboard.png" alt="sample future dashboard">
+    </picture>
+  </main>
+
+
+  <footer>
+    <div class="social-holder">
+      <ion-icon name="logo-facebook"></ion-icon>
+      <ion-icon name="logo-twitter"></ion-icon>
+      <ion-icon name="logo-instagram"></ion-icon>
+    </div>
+    <small>&copy; Copyright Ping. All rights reserved.</small>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="assets/jQuery/jqMain.js"></script>
+</body>
+
+</html>
