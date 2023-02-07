@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://www.frontendmentor.io/solutions/intro-component-with-signup-form-M4N1qnu9DZ)
-- [Live Site URL](https://gleeful-kitsune-6e6ebd.netlify.app/)
+- [Solution URL](https://www.frontendmentor.io/solutions/ping-coming-soon-4BGLuWXdoM)
+- [Live Site URL](https://resonant-seahorse-741981.netlify.app/)
 
 ## My process
 
